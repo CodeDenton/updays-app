@@ -1,0 +1,84 @@
+body {
+  background-color: #f9fafb; /* soft background */
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: #f9fafb; /* soft background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 1.5rem; /* space between cards */
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    gap: 0;
+    align-items: center;
+  }
+  .container {
+    text-align: center;
+  }
+}
+
+.titleText {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+  color: #FCA311;
+}
+
+.subTitleText {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5em;
+  color: rgb(70, 70, 70);
+}
+
+.buttonText {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  color: rgb(70, 70, 70);
+
+}
+
+.clickButton {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.clickButton:hover {
+    background-color: hsl(200, 100%, 40%);
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal-width columns */
+  gap: 1em; /* space between cards */
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1em
+}
